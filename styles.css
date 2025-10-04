@@ -161,16 +161,16 @@ nav a {
 }
 
 .slide-1 {
-  background-image: url('/images/PS3-2.jpg');
+  background-image: url('PS3-2.jpg');
 }
 
 .slide-2 {
-  background-image: url('/images/iPhone17series.jpg');
+  background-image: url('iPhone17series.jpg');
   object-fit: contain;
 }
 
 .slide-3 {
-  background-image: url('/images/iphone13.jpg');
+  background-image: url('iphone13.jpg');
   object-fit: contain;
 }
 
