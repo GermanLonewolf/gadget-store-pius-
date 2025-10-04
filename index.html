@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pius Gadget Store</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div id="fixed_cart">
+      <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <span id="cart-count">0</span>
+    </div>
+  <button id="scroll-up" class="scroll-btn"><i class="fa-solid fa-arrow-up"></i></button>
+  <button id="scroll-down" class="scroll-btn"><i class="fa-solid fa-arrow-down"></i></button>
+    <header>
+      <nav>
+    <div class="logo"><a href="index.html">Pius <span>Gadget</span></a></div>
+    <div class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#product-section">Products</a></li>
+      <li><a href="#phones">Phones</a></li>
+      <li><a href="#laptops">Laptops</a></li>
+      <li><a href="#consoles">Consoles</a></li>
+      <li><a href="#accessories">Accessories</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <button class="cart-btn">
+      <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i> My Cart</a>
+    </button>
+  </nav>
+</header>
+ <section class="hero-slider">
+   <div class="slider-container">
+     <div class="slide slide-1">
+       <div class="slide-content">
+         <p>Available Wireless Controller</p>
+         <h1>Bring Gaming Worlds To Life</h1>
+         <a href="#shop-now" class="cta-button">Get Started</a>
+        </div>
+        </div>
+        <div class="slide slide-2">
+          <div class="slide-content">
+            <h1>The New iPhone 17 Series</h1>
+            <p>Experience innovation at its peak with the all-new iPhone 17 Series — faster, smarter, and designed to keep you ahead. From stunning performance to an advanced camera system, it’s built for everything that matters to you.</p>
+            <a href="#" class="cta-button">Learn More</a>
+          </div>
+        </div>
+        <div class="slide slide-3">
+          <div class="slide-content">
+            <h1>Digital Transformation</h1>
+            <p>Embrace the future with our comprehensive digital solutions tailored for your needs.</p>
+            <a href="#" class="cta-button">Shop Now</a>
+          </div>
+        </div>
+      </div>
+        <div class="slider-nav">
+            <div class="nav-dot"></div>
+            <div class="nav-dot"></div>
+            <div class="nav-dot"></div>
+        </div>
+    </section>
+    <main>
+      <h2 id="product-section1">Product Section</h2>
+      <div class="product-section">
+        <div class="product-header">
+           <h3 id="phones">Phones</h3>
+           <p>Best smartphones for daily use</p>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="/images/iphone13.jpg" alt="iPhone 13" class="image" />
+            <h2>iPhone 13</h2>
+            <p class="price">₦500,000</p>
+             <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+            <button onclick="addToCart('iPhone 13', 500000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+          </div>
+        <div class="product-card">
+          <img src="/images/iphone13.jpg" alt="Samsung Galaxy S21" class="image" />
+          <h2>Samsung Galaxy S21</h2>
+          <p class="price">₦450,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('Samsung Galaxy S21', 450000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/images/iphone13.jpg" alt="iPhone 15" class="image" >
+          <h2>iPhone 15</h2>
+          <p class="price">₦500,000</p>
+        <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('Samsung Galaxy S21', 450000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+          <div class="product-card">
+          <img src="/images/gamepad.jpg" alt="iPhone 13" />
+          <h2>iPhone 13</h2>
+          <p class="price">₦500,000</p>
+           <details>
+            <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+          </details>
+          <button onclick="addToCart('iPhone 13', 500000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/images/gamepad.jpg" alt="Samsung Galaxy S24 Ultra" class="image" />
+          <h2>Samsung Galaxy S24 Ultra</h2>
+          <p class="price">₦450,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>512GB AI Smartphone, Unlocked Android, 200MP, 100x Zoom Cameras, Fast Processor, Long Battery Life, Edge-to-Edge Display, S Pen, US Version, 2024, Titanium Black</p>
+        </details>
+          <button onclick="addToCart('Samsung Galaxy S21', 450000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+          <div class="product-card">
+          <img src="/images/gamepad.jpg" alt="iPhone 13" />
+          <h2>iPhone 13</h2>
+          <p class="price">₦500,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('iPhone 13', 500000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/images/iphone13.jpg" alt="Samsung Galaxy S21" />
+          <h2>Samsung Galaxy S21</h2>
+          <p class="price">₦450,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('Samsung Galaxy S21', 450000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+          <div class="product-card">
+          <img src="/images/gamepad.jpg" alt="iPhone 13" />
+          <h2>iPhone 13</h2>
+          <p class="price">₦500,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('iPhone 13', 500000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/images/iphone13.jpg" alt="Samsung Galaxy S21" />
+          <h2>Samsung Galaxy S21</h2>
+          <p class="price">₦450,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('Samsung Galaxy S21', 450000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+      </div>
+    </main>
+    <section class="middle-section">
+       <div class="product-section">
+        <div class="product-header">
+           <h3 id="laptops">Laptops</h3>
+           <p>Best Laptops for gaming and other use</p>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+          <img src="/images/gamepad.jpg" alt="iPhone 13" class="image" />
+          <h2>iPhone 13</h2>
+          <p class="price">₦500,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('iPhone 13', 500000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/images/iphone13.jpg" alt="Samsung Galaxy S21" class="image" />
+          <h2>Toshiba Satellite</h2>
+          <p class="price">₦450,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>U945-S4380 14_ LED Ultrabook - Intel Core i3 i3-3217U 1_80 GHz - Ice Blue.</p>
+        </details>
+          <button onclick="addToCart('Samsung Galaxy S21', 450000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+          <div class="product-card">
+          <img src="/images/gamepad.jpg" alt="iPhone 13" />
+          <h2>iPhone 13</h2>
+          <p class="price">₦500,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('iPhone 13', 500000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+         <div class="product-card">
+          <img src="/images/iphone13.jpg" alt="iPhone 13" />
+          <h2>iPhone 13</h2>
+          <p class="price">₦500,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('iPhone 13', 500000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/images/iphone13.jpg" alt="Samsung Galaxy S21" />
+          <h2>Samsung Galaxy S21</h2>
+          <p class="price">₦450,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('Samsung Galaxy S21', 450000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+          <div class="product-card">
+          <img src="/images/gamepad.jpg" alt="iPhone 13" />
+          <h2>iPhone 13</h2>
+          <p class="price">₦500,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('iPhone 13', 500000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+      </div>
+    </section>
+    <section class="middle-section">
+      <div class="product-section">
+        <div class="product-header">
+          <h3 id="consoles">Consoles</h3>
+          <p>Best Consoles for gaming and fun</p>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+          <img src="/images/gamepad.jpg" alt="iPhone 13" />
+          <h2>iPhone 13</h2>
+          <p class="price">₦500,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('iPhone 13', 500000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/images/PS3-2.jpg" alt="PS3 SUPER SLIM"  id="shop-now" />
+          <h2>PS3.</h2>
+          <p class="price">₦140,000</p>
+           <details>
+            <summary>More details</summary>
+              <p> SUPER SLIM || 10 GAMES || 2 PADS</p>
+          </details>
+          <button onclick="addToCart('PS3.', 140000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+          <div class="product-card">
+          <img src="/images/PS3-3.jpg" alt="PS3 SLIM" />
+          <h2>🇬🇧 PS3</h2>
+          <p class="price">₦130,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>SLIM || 8 GAMES || 2 PADS</p>
+        </details>
+          <button onclick="addToCart('🇬🇧 PS3', 130000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/images/PS3.jpg" alt="PS3 SUPER SLIM" />
+          <h2>PS3</h2>
+          <p class="price">₦145,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>SUPER SLIM || 10 GAMES || 2 PADS</p>
+        </details>
+          <button onclick="addToCart('PS3', 145000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/images/gamepad.jpg" alt="Samsung Galaxy S21" />
+          <h2>Samsung Galaxy S21</h2>
+          <p class="price">₦450,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('Samsung Galaxy S21', 450000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+          <div class="product-card">
+          <img src="/images/gamepad.jpg" alt="iPhone 13" />
+          <h2>iPhone 13</h2>
+          <p class="price">₦500,000</p>
+           <details>
+          <summary>More details</summary>
+            <p>128GB storage, A15 Bionic chip, 12MP dual camera, 5G support, Super Retina XDR display.</p>
+        </details>
+          <button onclick="addToCart('iPhone 13', 500000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="product-section">
+        <div class="product-header">
+          <h3 id="accessories">Accessories</h3>
+          <p>Best accessories to pair with smartphones and other gadgets</p>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="/images/JBL-CHARGE5.jpg" alt="JBL CHARGE-5" />
+            <h2>JBL CHARGE-5</h2>
+            <p class="price">₦195,000</p>
+             <details>
+          <summary>More details</summary>
+            <p>JBL CHARGE-5</p>
+        </details>
+            <button onclick="addToCart('JBL CHARGE-5', 195000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="/images/JBL-FLIP6.jpg" alt="JBL FLIP-6" />
+            <h2>JBL FLIP-6</h2>
+            <p class="price">₦145,000</p>
+             <details>
+          <summary>More details</summary>
+            <p>1JBL FLIP-6</p>
+        </details>
+            <button onclick="addToCart('JBL FLIP-6', 145000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="/images/USB-CORD.jpg" alt="USB to Lightning Cord" />
+            <h2>USB to Lightning Cord</h2>
+            <p class="price">₦2,000</p>
+              <details>
+          <summary>More details</summary>
+            <p>USB to Lightning Cord</p>
+              </details>
+            <button onclick="addToCart('USB to Lightning Cord', 2000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="/images/POUCH.jpg" alt="iPhone 17 series jelly silicone pouch" />
+            <h2>iPhone 17 pouch</h2>
+            <p class="price">₦5,000</p>
+             <details>
+          <summary>More details</summary>
+            <p>iPhone 17 series jelly silicone pouch</p>
+        </details>
+            <button onclick="addToCart('iPhone 17 pouch', 5000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+          </div>
+            <div class="product-card">
+            <img src="/images/POWERBANK.jpg" alt="BASEUS POWER BANK 20,000MAH" />
+            <h2>BASEUS POWER BANK 20,000MAH</h2>
+            <p class="price">₦20,000</p>
+             <details>
+          <summary>More details</summary>
+            <p>BASEUS POWER BANK 20,000MAH</p>
+        </details>
+            <button onclick="addToCart('BASEUS POWER BANK 20,000MAH', 20000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="/images/POWERBANK2.jpg" alt="BASEUS POWER BANK 10,000MAH" />
+            <h2>BASEUS POWER BANK 10,000MAH</h2>
+            <p class="price">₦15,500</p>
+             <details>
+          <summary>More details</summary>
+            <p>15watts || Type c input/type c output</p>
+        </details>
+            <button onclick="addToCart('BASEUS POWER BANK 10,000MAH', 15500)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+          </div>
+            <div class="product-card">
+            <img src="/images/LIGHTPEN.jpg" alt="Universal stylus pen 🖊" />
+            <h2>Universal stylus pen 🖊️</h2>
+            <p class="price">₦15,500</p>
+             <details>
+          <summary>More details</summary>
+            <p>For iOS / Android / windows</p>
+        </details>
+            <button onclick="addToCart('Universal stylus pen 🖊', 15500)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="/images/HEADSET.jpg" alt="Bose headset with noise cancellation" />
+            <h2>Bose Headset</h2>
+            <p class="price">₦25,500</p>
+             <details>
+          <summary>More details</summary>
+            <p>Bose headset with noise cancellation</p>
+        </details>
+            <button onclick="addToCart('Bose Headset ', 25500)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="/images/360-CHARGER.jpg" alt="Havit 3in1 electric rotating wireless charger" />
+            <h2>Havit 3in1 Charger </h2>
+            <p class="price">₦36,000</p>
+             <details>
+          <summary>More details</summary>
+            <p>Havit 3in1 Electric Rotating Wireless Charger</p>
+        </details>
+            <button onclick="addToCart('Havit 3in1 Charger ', 36000)"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+          </div>
+        </div>
+    </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section logo-section">
+          <div class="store-name"><a href="index.html">Pius <span>Gadget</span></a></div>
+            <p class="store-name-p">Your trusted destination for the latest gadgets and technology. Quality products, competitive prices, excellent service.</p>
+          </div>
+          <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#product-section">Products</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-media">
+              <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
+                <span><i class="fa-brands fa-facebook"></i></span>
+              </a>
+              <a href="https://www.x.com" class="social-icon twitter" aria-label="Twitter">
+                <span><i class="fa-brands fa-twitter"></i></span>
+              </a>
+              <a href="https://www.instagram.com" class="social-icon instagram" aria-label="Instagram">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </a>
+              <a href="https://www.whatsapp.com" class="social-icon whatsapp" aria-label="WhatsApp">
+                <span><i class="fa-brands fa-whatsapp"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      <div class="copyright">
+        <p>&copy; 2025 Pius Gadget Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  </div>
+  
+<script src="js/script.js"></script>
+</body>
+</html>

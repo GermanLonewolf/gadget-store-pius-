@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pius Gadget Store</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <button id="scroll-up" class="scroll-btn"><i class="fa-solid fa-arrow-up"></i></button>
+    <button id="scroll-down" class="scroll-btn"><i class="fa-solid fa-arrow-down"></i></button>
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html">Pius <span>Gadget</span></a></div>
+        <div class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="index.html#product-section">Products</a></li>
+          <li><a href="index.html#phones">Phones</a></li>
+          <li><a href="index.html#laptops">Laptops</a></li>
+          <li><a href="index.html#consoles">Consoles</a></li>
+          <li><a href="index.html#accessories">Accessories</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="order-summary">
+        <h3 class="summary-title">Order Summary</h3>
+        <div id="cart-items"></div>
+        <div class="total-section">
+          <div class="total-row total-final">
+            <span>Total:</span>
+            <span>₦<span id="cart-total">0</span></span>
+          </div>
+        </div>
+        <button id="clear-cart"><i class="fa-solid fa-trash"></i> Clear Cart</button> <br>
+        <button type="button" class="checkout-btn" id="proceed-checkout">Proceed to Checkout</button>
+    </div>
+  </main>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section logo-section">
+          <div class="store-name"><a href="index.html">Pius <span>Gadget</span></a></div>
+            <p class="store-name-p">Your trusted destination for the latest gadgets and technology. Quality products, competitive prices, excellent service.</p>
+          </div>
+          <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#product-section">Products</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-media">
+              <a href="https://www.facebook.com" class="social-icon facebook" aria-label="Facebook">
+                <span><i class="fa-brands fa-facebook"></i></span>
+              </a>
+              <a href="https://www.x.com" class="social-icon twitter" aria-label="Twitter">
+                <span><i class="fa-brands fa-twitter"></i></span>
+              </a>
+              <a href="https://www.instagram.com" class="social-icon instagram" aria-label="Instagram">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </a>
+              <a href="https://www.whatsapp.com" class="social-icon whatsapp" aria-label="WhatsApp">
+                <span><i class="fa-brands fa-whatsapp"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      <div class="copyright">
+        <p>&copy; 2025 Pius Gadget Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+<script src="js/script.js"></script>
+</body>
+</html>
